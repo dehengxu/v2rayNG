@@ -270,6 +270,7 @@
     <string name="title_logcat">Logcat</string>
     <string name="logcat_copy">Copy</string>
     <string name="logcat_clear">Clear</string>
+    <string name="logcat_refresh">Refresh</string>
     <string name="title_service_restart">Service restart</string>
     <string name="title_del_all_config">Delete config</string>
     <string name="title_del_duplicate_config">Delete duplicate config</string>
