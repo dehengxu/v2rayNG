@@ -8,6 +8,15 @@ android {
     namespace = "com.v2ray.ang"
     compileSdk = 36
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("../v2rayng-release.keystore")
+            storePassword = "v2rayng123"
+            keyAlias = "v2rayng"
+            keyPassword = "v2rayng123"
+        }
+    }
+
     defaultConfig {
         applicationId = "com.v2ray.ang"
         minSdk = 24
@@ -40,6 +49,7 @@ android {
 
     buildTypes {
         release {
+            signingConfig = signingConfigs.getByName("release")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
